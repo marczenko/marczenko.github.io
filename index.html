@@ -18,6 +18,15 @@
             border-radius: 9999px;
             filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
         }
+		/* Sticky first column */
+table th:first-child,
+table td:first-child {
+    position: sticky;
+    left: 0;
+    background-color: #f8fafc; /* bg-slate-50 to match page */
+    z-index: 10;
+    box-shadow: 2px 0 5px -2px rgba(0,0,0,0.1); /* Optional: subtle separator */
+}
     </style>
 </head>
 <body class="bg-slate-50">
@@ -28,7 +37,7 @@
         <header class="text mb-10">
             <h1 class="text-3xl md:text-3xl font-bold text-slate-800">Voices of Fryslân: Exploring Frisian Dialects</h1>
 			<h2>by Igor Marchenko, CF Experience 2025</h2>
-            <p class="mt-3 text-md text-slate-600 mx-auto">Listen closely to the audio clips below to discover the unique sounds of three major Frisian dialects. Use these clues to solve the mystery of who is speaking!</p>
+            <p class="mt-3 text-md text-slate-600 mx-auto">Listen closely to the audio clips below to discover the unique sounds of the three Frisian dialects. Use these clues to solve the mystery of who is speaking!</p>
         </header>
 
         <!-- Main Table Container with horizontal scroll on small screens -->
@@ -59,7 +68,7 @@
                     <tr class="border-b border-slate-200 hover:bg-slate-50/50">
                         <td class="px-6 py-4 font-medium text-slate-900">
                             Pronunciation of <strong class="font-semibold">"ei"</strong><br>
-                            <span class="font-normal text-slate-500">Listen for how the word 'train' is pronounced. Is the diphthong like Dutch 'ei', or more like 'ai'?</span>
+                            <span class="font-normal text-slate-500">Listen for how the word with 'ei' in it is pronounced. Does it sound like 'ei', or more like 'ai'?</span>
                         </td>
                         <td class="px-6 py-4">
                             <audio controls src="clay/ei.mp3" type="audio/mpeg"></audio>
@@ -79,7 +88,7 @@
                     <tr class="border-b border-slate-200 hover:bg-slate-50/50">
                         <td class="px-6 py-4 font-medium text-slate-900">
                              <strong class="font-semibold">Personal Pronouns</strong><br>
-                            <span class="font-normal text-slate-500">How do people pronounce "he"?</span>
+                            <span class="font-normal text-slate-500">Listen to how people pronounce "he". Is it similar to how you pronounce it in Dutch?</span>
                         </td>
                         <td class="px-6 py-4">
                             <audio controls src="clay/hy.mp3"></audio>
@@ -98,8 +107,8 @@
                     <!-- Row 3: Breaking (Brekking) -->
                     <tr class="border-b border-slate-200 hover:bg-slate-50/50">
                         <td class="px-6 py-4 font-medium text-slate-900">
-                           <strong class="font-semibold">Breaking (uo > wa)</strong><br>
-                            <span class="font-normal text-slate-500">'Breaking' means one vowel becomes two. Here, 'oa' (as in 'boat') might change to 'wa', like 'bwaat'.</span>
+                           <strong class="font-semibold">Modern Frisian breaking</strong><br>
+                            <span class="font-normal text-slate-500">Breaking is a historical sound change in Frisian when a two-vowel sequence develops into a new combination involving [j] or [w] and a vowel. For example, the word <i>skoalle</i> used to be pronounced more like sk[oa]lə, but in many Frisian dialects is now pronounced as sk[wɑ]lə.</span>
                         </td>
                         <td class="px-6 py-4">
                             <audio controls src="clay/breaking.mp3"></audio>
@@ -107,7 +116,7 @@
                         </td>
                         <td class="px-6 py-4">
                             <audio controls src="wood/breaking.mp3"></audio>
-                            <p class="mt-2 text-slate-600 italic">It wie in boeiende moarn, dy't wat langer duorre as it doel wie.</p>
+                            <p class="mt-2 text-slate-600 italic">It hat lang duorre foardat it multyfunksjonele soarchgebou der kaam.</p>
                         </td>
                         <td class="px-6 py-4">
                             <audio controls src="southwest/breaking.mp3"></audio>
@@ -119,7 +128,7 @@
                     <tr class="border-b border-slate-200 hover:bg-slate-50/50">
                         <td class="px-6 py-4 font-medium text-slate-900">
                            <strong class="font-semibold">D-deletion</strong><br>
-                            <span class="font-normal text-slate-500">Can you notice anything about how the words with -d endings are pronounced?</span>
+                            <span class="font-normal text-slate-500">Can you notice anything about how the words with -d endings sound?</span>
                         </td>
                         <td class="px-6 py-4">
                             <audio controls src="clay/d-deletion.mp3"></audio>
@@ -139,7 +148,7 @@
                     <tr class="hover:bg-slate-50/50">
                         <td class="px-6 py-4 font-medium text-slate-900">
                            <strong class="font-semibold">/u(:)/ vs /y(:)/</strong><br>
-                            <span class="font-normal text-slate-500">Can you notice anything about how the words with -d endings are pronounced?</span>
+                            <span class="font-normal text-slate-500">What can you say about how the /u/ sound in the word hûs is pronounced?</span>
                         </td>
                         <td class="px-6 py-4">
                             <audio controls src="clay/hus.mp3"></audio>
