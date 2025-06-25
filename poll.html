@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Guess the Frisian Dialect</title>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #1e293b;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      color: #334155;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .content-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .audio-block {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+      flex-shrink: 0;
+    }
+
+    .iframe-block {
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .speaker {
+      margin-bottom: 25px;
+    }
+
+    .speaker label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    audio {
+      width: 100%;
+    }
+
+    i {
+      display: block;
+      margin-top: 5px;
+      color: #555;
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <h1 class="text-3xl md:text-3xl font-bold text-slate-800">
+    Voices of Fryslân: Exploring Frisian Dialects
+  </h1>
+  <h2>by Igor Marchenko, CF Experience 2025</h2> 
+  <br /><br />
+
+  <div class="content-container">
+    <!-- Audio block -->
+    <div class="audio-block">
+      <div class="speaker">
+        <label>Speaker 1</label>
+        <audio controls>
+          <source src="guess/hus_wy_wood.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <i>Wy moatte wer nei hûs ta.</i>
+      </div>
+
+      <div class="speaker">
+        <label>Speaker 2</label>
+        <audio controls>
+          <source src="guess/hus_wij_clay.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <i>Wy hawwe in hûs by it wetter hierd.</i>
+      </div>
+
+      <div class="speaker">
+        <label>Speaker 3</label>
+        <audio controls>
+          <source src="guess/trie_sw.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <i>In skoft lyn binne trije leden fan de ried fan kommissarissen opstapt.</i>
+      </div>
+    </div>
+
+    <!-- Iframe block -->
+    <div class="iframe-block">
+      <iframe src="https://pollev-embeds.com/surveys/d93gxRhdrDXx1D8jvnOHj/respond" width="800px" height="600px"></iframe>
+    </div>
+  </div>
+
+</body>
+</html>
